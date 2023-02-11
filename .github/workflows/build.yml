@@ -197,7 +197,7 @@ jobs:
           msbuild --version
           echo.
           git clone --depth 1 https://github.com/mupen64plus/mupen64plus-core.git ..\mupen64plus-core
-          git clone --depth 1 -b up2023 --single-branch https://github.com/Jj0YzL5nvJ/mupen64plus-win32-deps.git ..\mupen64plus-win32-deps
+          git clone --depth 1 -b up2023.2 --single-branch https://github.com/Jj0YzL5nvJ/mupen64plus-win32-deps.git ..\mupen64plus-win32-deps
           md pkg
           echo.
           msbuild projects\msvc\mupen64plus-video-rice.vcxproj /p:Configuration=Release;Platform=%ARCH%;PlatformToolset=${{ matrix.toolset }}

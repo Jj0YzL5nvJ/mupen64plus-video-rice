@@ -145,7 +145,7 @@ OBJDIR = _obj$(POSTFIX)
 OPTFLAGS ?= -O3 -flto
 WARNFLAGS ?= -Wall
 CFLAGS += $(OPTFLAGS) $(WARNFLAGS) -ffast-math -fno-strict-aliasing -fvisibility=hidden -I$(SRCDIR)
-CXXFLAGS += -fvisibility-inlines-hidden -std=gnu++14 -pthread
+CXXFLAGS += -fvisibility-inlines-hidden -std=gnu++11 -pthread
 LDFLAGS += $(SHARED)
 
 ifeq ($(CPU), X86)
